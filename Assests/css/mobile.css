@@ -63,14 +63,16 @@ body{
     cursor: pointer;
     color:#000;
     transition: color .5s;
-    margin-left: -120px ;
+    margin-left: -110px ;
+    padding: 16px;
+
 }
 
 .nav-bar-list li:hover ,a:hover{
     color: hsl(5, 85%, 63%);
     }
 .nav-bar-list{
-    padding-left: 200px;
+    padding: -50px;
 
 }
 /*styling for the main tag*/
@@ -148,7 +150,8 @@ aside{
     padding:20px;
 }
 aside h2{
-    color: hsl(35, 77%, 62%);
+    color:  hsl(35, 77%, 62%);
+    opacity: 1;
         line-height: 1.7;
         font-size: 35px;
 }
