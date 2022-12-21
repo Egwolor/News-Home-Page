@@ -1,0 +1,267 @@
+@media only screen and (max-width:1000px)  and (min-width:820px){
+    
+
+    *{
+        box-sizing: border-box;
+        margin:0;
+        padding:0;
+    }
+    body{
+        display:grid;
+        grid-template-columns: 1fr;
+        background-color:hsl(36, 100%, 99%);
+        font-family: 'inter', sans-serif;
+        font-weight: 400;
+        max-width: 1000px;
+        margin:15px;
+        gap:20px;
+    }
+  
+    .nav-bar{
+        display:flex;
+        justify-content: space-between;
+        margin-top: 20px;
+    }
+    
+    .w-logo{
+        height: 40px;
+    }
+    .openNav{
+        display: block;
+        position: absolute;
+        right:15px;
+        height:40px;
+        width:40px;
+    }
+    
+    /* This contains the animated side nav  and all its elements */
+    .side-nav{
+        position:fixed;
+        height:100%;
+        width:0%;
+        background-color: rgba(255, 255, 255, 0.2);
+        backdrop-filter: blur(50px);
+        top:0;
+        right:0;
+        padding-top: 90px;
+        z-index:1;
+        overflow-x: hidden;
+        transition:1s;
+    }
+    
+    .closeNav{
+        position:absolute;
+        display: block;
+        right:-5px;
+        top:-70px;
+        transition: 1s;
+    }
+    .nav-bar-list li ,a{
+        display: block;
+        font-size:40px;
+        font-weight:600;
+        line-height: 2.5;
+        text-decoration: none;
+        cursor: pointer;
+        color:#000;
+        transition: color .5s;
+    }
+    .nav-bar-list li:hover , a:hover{
+        color: hsl(5, 85%, 63%);
+        }
+        a:link{
+            margin-left: -18px;
+
+        }
+    .nav-bar-list{
+        padding-right:350px;
+    }
+    /*styling for the main tag*/
+    main{
+        grid-column: 1;
+       
+    
+    }
+   
+    .web3-img-mobile{
+        display:block;
+        width:100%;
+        height:auto;
+   
+    }
+    .web3-img-desktop{
+        display:none;
+    }
+    main .content{
+        display:flex;
+        flex-direction: column;
+        margin-top: 20px;
+        margin-left: px;
+    }
+    h1{
+            color: hsl(240, 100%, 5%);
+            font-weight: 800;
+            line-height: 1.1;
+            font-size: 60px;
+            opacity:0%;
+        transition:.5s;
+        }
+    article {
+        font-size: 35px;
+        line-height: 1.2;
+        margin-top: 10px;
+        margin-left:0;
+    }
+    article p {
+        opacity: 50%;
+    
+    }
+    hr
+        {
+            opacity: 20%;
+        
+        }
+    
+    button {
+        background-color: hsl(5, 85%, 63%);
+        color: #fff;
+        font-size: 24px;
+        height: 60px;
+        width: 190px;
+        outline: none;
+        border: none;
+        cursor: pointer;
+        opacity: 100%;
+    }
+    
+    button:active,
+    button:hover {
+        background-color: hsl(240, 100%, 5%);
+    }
+    
+    /*styling for the aside tag*/
+    
+    aside{
+        grid-column: 1;
+        grid-row: 3;
+        background-color: hsl(240, 100%, 5%);
+       
+         padding:40px;
+    }
+    aside h2{
+        color: hsl(35, 77%, 62%);
+            line-height: 1.7;
+            font-size: 65px;
+    }
+    aside .aside-header{
+        color: white;
+        font-weight: 700;
+        line-height: 2;
+        font-size: 35px;
+        cursor: pointer;
+    }
+
+    .first{
+        width:80%;
+        border-right:.1em solid hsl(35, 77%, 62%);
+        white-space: nowrap;
+    overflow:hidden;
+    animation:typing 3.5s steps(30, end), blinking-cursor .5s step-end infinite;
+    animation-fill-mode: forwards;
+    }
+    .second{
+        
+        width:80%;
+        white-space: nowrap;
+    opacity:0;
+    overflow:hidden;
+    border-right:.1em solid hsl(35, 77%, 62%);
+    animation:typing 3.5s steps(30, end), blinking-cursor .5s step-end infinite;
+    animation-delay: 5s;
+    animation-fill-mode: forwards;
+    }
+    .third{
+        width:75%;
+        white-space: nowrap;
+        opacity:0;
+    overflow:hidden;
+    border-right:.17em solid hsl(35, 77%, 62%);
+    animation:typing 3.5s steps(30, end), blinking-cursor .5s step-end infinite alternate;
+    animation-fill-mode: forwards;
+    animation-delay: 10s;
+    
+    }
+    @keyframes typing{
+        0%{ 
+            width: 0;}
+            1%{
+                opacity: 1;
+            }
+        99.9%{
+            border-right:.17em solid hsl(35, 77%, 62%);
+        }
+        100%{
+            border: none;
+            opacity: 1;
+        }
+    }
+    @keyframes blinking-cursor{
+       
+        50%{
+            border-color:transparent;
+        }
+    }
+    .aside-header:hover{
+        
+        color: hsl(35, 77%, 62%);
+    }
+    
+    aside .aside-content{
+    color: white;
+    opacity: 70%;
+    font-size: 25px;
+    font-weight: 700px;
+    line-height: 1.5;
+    }
+    
+    /*styling for the footer tag*/
+    
+    .footer-img{
+        height:130px;
+    
+    }
+    
+    footer h2{
+        font-size: 30px;
+            font-weight: 800;
+            opacity: 30%;
+    
+    }
+    footer .header{
+        font-weight: 800;
+            font-size: 25px;
+            cursor: pointer;
+            line-height: 3;
+            margin-top:-40px;
+    
+    }
+    footer .header:hover{
+        color: hsl(5, 85%, 63%);
+    }
+    footer .article{
+         font-size: 19px;
+            line-height: 1.2;
+            opacity: 50%;
+    
+    }
+    .flex{
+        display: flex;
+    }
+    .flex-2{
+        margin-left:30px;
+    
+    }
+    }
+
+
+   

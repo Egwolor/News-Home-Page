@@ -1,0 +1,253 @@
+@media only screen and (min-width:500px) and (max-width:1440px) {
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+body{
+    display:grid;
+    grid-template-columns: repeat(3, 2fr);
+    gap:50px;
+    background-color:hsl(36, 100%, 99%);
+    font-family: 'inter', sans-serif;
+    font-weight: 400;
+    margin:20px;
+}
+.w-logo{
+    height: 20px;
+}
+.nav-bar{
+    display:flex;
+    justify-content: space-between;
+}
+/* hides the nav button for desktop view */
+ .closeNav, .openNav{
+    display:none;
+}
+
+.nav-bar-list li ,a{
+    display:inline;
+    list-style-type: none;
+    text-decoration: none;
+    padding: 20px;
+    font-size: 17px;
+    margin: 0px;
+    color:#000;
+    transition: color .5s;
+    cursor: pointer;
+}
+.nav-bar-list li:hover , a:hover{
+color: hsl(5, 85%, 63%);
+}
+.nav-bar-list {
+    position: absolute;
+    right: 15px;
+    margin:15px;
+}
+/*styling for the main tag*/
+main{
+    grid-column: 1/3;
+   
+
+}
+.web3-img-mobile{
+    display:none;
+}
+.web3-img-desktop{
+    object-fit: cover;
+    height:auto;
+    width:100%;
+    object-fit: cover;
+}
+main .content{
+    display:flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+h1{
+        color: hsl(240, 100%, 5%);
+        font-weight: 800;
+        line-height: 1.1;
+        font-size: 50px;
+        margin-top: -10px;
+        opacity:0%;
+        transition:.5s;
+        
+    
+        
+}
+article {
+    font-size: 15px;
+    line-height: 1.2;
+    margin-left: 100px;
+}
+article p {
+    opacity: 50%;
+
+}
+hr
+    {
+        opacity: 20%;
+    
+    }
+
+button {
+    background-color: hsl(5, 85%, 63%);
+    color: #fff;
+    font-size: 10px;
+    margin-left: -19px;
+    height: 25px;
+    width: 95px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    opacity: 100%;
+}
+
+button:active,
+button:hover {
+    background-color: hsl(240, 100%, 5%);
+}
+
+/*styling for the aside tag*/
+
+aside{
+    grid-column: 3/4;
+    grid-row: 2/2;
+    background-color: hsl(240, 100%, 5%);
+    padding:17px;
+}
+aside h2{
+    color: hsl(35, 77%, 62%);
+        line-height: 1;
+        font-size: 45px;
+        margin:0 ;
+        width:110px;
+       
+}
+aside .aside-header{
+    color: white;
+    font-weight: 700;
+    font-size: 25px;
+    margin-top:20px ;
+    margin-bottom:20px ;
+   cursor: pointer;
+}
+.first{
+    width:93%;
+    border-right:.1em solid hsl(35, 77%, 62%);
+    white-space: nowrap;
+overflow:hidden;
+animation:typing 3.5s steps(30, end), blinking-cursor .5s step-end infinite;
+animation-fill-mode: forwards;
+}
+.second{
+    
+    width:93%;
+    white-space: nowrap;
+opacity:0;
+overflow:hidden;
+border-right:.1em solid hsl(35, 77%, 62%);
+animation:typing 3.5s steps(30, end), blinking-cursor .5s step-end infinite;
+animation-delay: 5s;
+animation-fill-mode: forwards;
+}
+.third{
+    width:93%;
+    white-space: nowrap;
+    opacity:0;
+overflow:hidden;
+border-right:.17em solid hsl(35, 77%, 62%);
+animation:typing 3.5s steps(30, end), blinking-cursor .5s step-end infinite alternate;
+animation-fill-mode: forwards;
+animation-delay: 10s;
+
+}
+@keyframes typing{
+    0%{ 
+        width: 0;}
+        1%{
+            opacity: 1;
+        }
+    99.9%{
+        border-right:.17em solid hsl(35, 77%, 62%);
+    }
+    100%{
+        border: none;
+        opacity: 1;
+    }
+}
+@keyframes blinking-cursor{
+   
+    50%{
+        border-color:transparent;
+    }
+}
+
+.aside-header:hover{
+    
+    color: hsl(35, 77%, 62%);
+}
+
+aside .aside-content{
+color: white;
+opacity: 70%;
+font-size: 16px;
+font-weight: 700px;
+line-height: 1.5;
+}
+
+/*styling for the footer tag*/
+
+.footer-img{
+    height:100px;
+    
+
+}
+
+
+footer h2{
+    font-size: 20px;
+        font-weight: 800;
+        opacity: 30%;
+        margin-top:5px;
+        line-height: 3;
+
+}
+footer .header{
+    font-weight: 800;
+        font-size: 17px;
+        cursor: pointer;
+
+}
+footer .header:hover{
+    color: hsl(5, 85%, 63%);
+}
+footer .article{
+     font-size: 13px;
+        line-height: 1.2;
+        opacity: 50%;
+
+}
+.flex{
+    display: flex;
+}
+.flex-2{
+    margin-left:30px;
+    margin-top:-22px;
+
+}
+.footer-1 , .footer-2 , .footer-3{
+   
+    transition:.8s;
+}
+.footer-1:hover, .footer-2:hover , .footer-3:hover{
+    box-shadow:30px 0px  35px  0px lightgrey;
+}
+h3{
+    color:#000;
+    text-align: center;
+    line-height: 2;
+    font-size: 15px;
+}
+}
