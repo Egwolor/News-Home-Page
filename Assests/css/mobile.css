@@ -1,4 +1,4 @@
-@media only screen and (min-width:350px) and (max-width:450px) {
+@media only screen and (max-width:375px) {
     
 
 *{
@@ -12,7 +12,7 @@ body{
     background-color:hsl(36, 100%, 99%);
     font-family: 'inter', sans-serif;
     font-weight: 400;
-    max-width: 450px;
+    max-width: 375px;
     margin:15px;
     gap:20px;
 }
@@ -28,6 +28,7 @@ body{
 .openNav{
     position: absolute;
     right:15px;
+    display:block;
 }
 
 /* This contains the animated side nav  and all its elements */
@@ -77,6 +78,7 @@ main{
    display:none;
 }
 .web3-img-mobile{
+    display:block;
 object-fit: cover;
 height:auto;
 width:100%;
@@ -102,6 +104,7 @@ article {
     font-size: 17px;
     line-height: 1.2;
     margin-top: 10px;
+    margin-left: auto;
 }
 article p {
     opacity: 50%;

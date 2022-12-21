@@ -19,7 +19,7 @@ function closeNav(){
 }
 
 function display(){
-    if(document.documentElement.scrollTop <= 780 ){
+    if(document.documentElement.scrollTop <= 380 ){
     document.getElementById("scroll").style.transform="translateY(10px)"
     document.getElementById("scroll").style.opacity="100%"
 }
