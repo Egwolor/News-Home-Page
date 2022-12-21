@@ -1,4 +1,4 @@
-@media only screen and (max-width:1000px)  and (min-width:850px){
+/*@media only screen and (max-width:1000px)  and (min-width:820px){
     
 
     *{
@@ -34,7 +34,7 @@
         width:40px;
     }
     
-    /* This contains the animated side nav  and all its elements */
+    /* This contains the animated side nav  and all its elements *
     .side-nav{
         position:fixed;
         height:100%;
@@ -75,7 +75,7 @@
     .nav-bar-list{
         padding-right:350px;
     }
-    /*styling for the main tag*/
+    /*styling for the main tag*
     main{
         grid-column: 1;
        
@@ -138,7 +138,7 @@
         background-color: hsl(240, 100%, 5%);
     }
     
-    /*styling for the aside tag*/
+    /*styling for the aside tag*
     
     aside{
         grid-column: 1;
@@ -223,7 +223,7 @@
     line-height: 1.5;
     }
     
-    /*styling for the footer tag*/
+    /*styling for the footer tag*
     
     .footer-img{
         height:130px;

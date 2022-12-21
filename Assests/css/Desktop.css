@@ -7,8 +7,8 @@
 body{
     max-width: 1440px;
     display:grid;
-    grid-template-columns: repeat(3, 2fr);
-    gap:50px;
+    grid-template-columns: repeat(3, 1fr);
+    gap:30px;
     background-color:hsl(36, 100%, 99%);
     font-family: 'inter', sans-serif;
     font-weight: 400;
@@ -16,6 +16,7 @@ body{
 }
 .w-logo{
     height: 20px;
+    margin-top: 13px;
 }
 .nav-bar{
     display:flex;
@@ -30,7 +31,7 @@ body{
     display:inline;
     list-style-type: none;
     text-decoration: none;
-    padding: 20px;
+    padding: 15px;
     font-size: 17px;
     margin: 0px;
     color:#000;
@@ -201,13 +202,13 @@ line-height: 1.5;
 /*styling for the footer tag*/
 
 .footer-img{
-    height:100px;
+    height: 100px;
     
 
 }
 
 
-footer h2{
+ h2{
     font-size: 20px;
         font-weight: 800;
         opacity: 30%;

@@ -1,4 +1,4 @@
-@media only screen and (max-width:375px) {
+@media only screen and (max-width:450px) {
     
 
 *{
@@ -24,6 +24,7 @@ body{
 
 .w-logo{
     height: 20px;
+    margin-top: -3px;
 }
 .openNav{
     position: absolute;
@@ -40,33 +41,37 @@ body{
     background-color:#fff;
     top:0;
     right:0;
-    padding-top: 90px;
+    padding-top: 10px;
     z-index:1;
     overflow-x: hidden;
     transition:1s;
 }
 .closeNav{
     position:absolute;
-    right:18px;
-    top:30px;
+    display:block;
+    right:-15px;
+    top:19px;
     transition: 1s;
     height:25px;
 }
-.nav-bar-list li , a{
+.nav-bar-list li  ,a {
     display: block;
     text-decoration: none;
-    font-size:21px;
+    font-size:25px;
     font-weight:600;
-    line-height: 2.5;
+    line-height: .1;
     cursor: pointer;
     color:#000;
     transition: color .5s;
+    margin-left: -120px ;
 }
+
 .nav-bar-list li:hover ,a:hover{
     color: hsl(5, 85%, 63%);
     }
 .nav-bar-list{
-    padding:30px;
+    padding-left: 200px;
+
 }
 /*styling for the main tag*/
 main{
@@ -104,12 +109,11 @@ article {
     font-size: 17px;
     line-height: 1.2;
     margin-top: 10px;
-    margin-left: auto;
 }
 article p {
     opacity: 50%;
     margin-top:20px;
-
+    margin-left: -95px;
 }
 hr
     {
@@ -127,6 +131,7 @@ button {
     border: none;
     cursor: pointer;
     opacity: 100%;
+    margin-left: 5px;
 }
 
 button:active,
